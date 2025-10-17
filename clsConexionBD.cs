@@ -18,7 +18,7 @@ namespace pryLantieriLucas_SP4
         OleDbDataReader lectorDataReader;
         public string nombreBaseDeDatos;
 
-        public void ConectarBD()
+        public void ConectarBD(System.Windows.Forms.ToolStripStatusLabel label)
         {
             try
             {
@@ -28,11 +28,13 @@ namespace pryLantieriLucas_SP4
 
                 coneccionBaseDatos.Open();
 
-                MessageBox.Show("Conectado a " + nombreBaseDeDatos);
+                label.Text = "Base de datos conectada";
+                label.BackColor = System.Drawing.Color.LightGreen;
             }
             catch (Exception error)
             {
-                MessageBox.Show("Falló la conexión - " + error.Message);
+                label.Text = "No se pudo conectar con la base de datos";
+                label.BackColor = System.Drawing.Color.LightCyan;
             }
 
         }

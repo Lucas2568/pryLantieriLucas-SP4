@@ -20,7 +20,7 @@ namespace pryLantieriLucas_SP4
         private void frmInicio_Load(object sender, EventArgs e)
         {
             clsConexionBD clsConexionBD = new clsConexionBD();
-            clsConexionBD.ConectarBD();
+            clsConexionBD.ConectarBD(toolStripStatusLabel1Conexion);
         }
     }
 }
