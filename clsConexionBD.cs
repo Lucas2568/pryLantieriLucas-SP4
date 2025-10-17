@@ -7,6 +7,7 @@ using System.Data.OleDb;
 using System.Windows.Forms;
 using System.Data;
 using System.Collections;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace pryLantieriLucas_SP4
 {
@@ -36,6 +37,11 @@ namespace pryLantieriLucas_SP4
                 label.Text = "No se pudo conectar con la base de datos";
                 label.BackColor = System.Drawing.Color.LightCyan;
             }
+
+        }
+
+        public void cargarChart(Chart chartCamiones)
+        {
 
         }
     }

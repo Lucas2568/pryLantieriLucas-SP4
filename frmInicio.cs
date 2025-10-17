@@ -21,6 +21,7 @@ namespace pryLantieriLucas_SP4
         {
             clsConexionBD clsConexionBD = new clsConexionBD();
             clsConexionBD.ConectarBD(toolStripStatusLabel1Conexion);
+            clsConexionBD.cargarChart(chartCamiones);
         }
     }
 }

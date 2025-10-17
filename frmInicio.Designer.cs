@@ -33,7 +33,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.chartCamiones = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStripConexion = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1Conexion = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTipoGrafico = new System.Windows.Forms.Label();
             this.cbxTipoGrafico = new System.Windows.Forms.ComboBox();
@@ -43,7 +43,7 @@
             this.btnGastosViaticosPorCamion = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).BeginInit();
-            this.statusStrip1.SuspendLayout();
+            this.statusStripConexion.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartCamiones
@@ -62,15 +62,15 @@
             this.chartCamiones.TabIndex = 0;
             this.chartCamiones.Text = "chart1";
             // 
-            // statusStrip1
+            // statusStripConexion
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStripConexion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1Conexion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 512);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(813, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStripConexion.Location = new System.Drawing.Point(0, 512);
+            this.statusStripConexion.Name = "statusStripConexion";
+            this.statusStripConexion.Size = new System.Drawing.Size(813, 22);
+            this.statusStripConexion.TabIndex = 1;
+            this.statusStripConexion.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1Conexion
             // 
@@ -81,9 +81,10 @@
             // lblTipoGrafico
             // 
             this.lblTipoGrafico.AutoSize = true;
+            this.lblTipoGrafico.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoGrafico.Location = new System.Drawing.Point(33, 13);
             this.lblTipoGrafico.Name = "lblTipoGrafico";
-            this.lblTipoGrafico.Size = new System.Drawing.Size(80, 13);
+            this.lblTipoGrafico.Size = new System.Drawing.Size(120, 19);
             this.lblTipoGrafico.TabIndex = 2;
             this.lblTipoGrafico.Text = "Tipo de Gráfico";
             // 
@@ -97,12 +98,13 @@
             "Otra opción a su elección"});
             this.cbxTipoGrafico.Location = new System.Drawing.Point(36, 43);
             this.cbxTipoGrafico.Name = "cbxTipoGrafico";
-            this.cbxTipoGrafico.Size = new System.Drawing.Size(121, 21);
+            this.cbxTipoGrafico.Size = new System.Drawing.Size(153, 21);
             this.cbxTipoGrafico.TabIndex = 3;
             // 
             // btnKilometrosCamion
             // 
-            this.btnKilometrosCamion.Location = new System.Drawing.Point(36, 101);
+            this.btnKilometrosCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKilometrosCamion.Location = new System.Drawing.Point(32, 101);
             this.btnKilometrosCamion.Name = "btnKilometrosCamion";
             this.btnKilometrosCamion.Size = new System.Drawing.Size(121, 46);
             this.btnKilometrosCamion.TabIndex = 4;
@@ -111,7 +113,8 @@
             // 
             // btnGastosPorCamion
             // 
-            this.btnGastosPorCamion.Location = new System.Drawing.Point(36, 169);
+            this.btnGastosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGastosPorCamion.Location = new System.Drawing.Point(32, 189);
             this.btnGastosPorCamion.Name = "btnGastosPorCamion";
             this.btnGastosPorCamion.Size = new System.Drawing.Size(121, 46);
             this.btnGastosPorCamion.TabIndex = 5;
@@ -120,7 +123,8 @@
             // 
             // btnKilogramosPorCamion
             // 
-            this.btnKilogramosPorCamion.Location = new System.Drawing.Point(36, 239);
+            this.btnKilogramosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKilogramosPorCamion.Location = new System.Drawing.Point(32, 289);
             this.btnKilogramosPorCamion.Name = "btnKilogramosPorCamion";
             this.btnKilogramosPorCamion.Size = new System.Drawing.Size(121, 51);
             this.btnKilogramosPorCamion.TabIndex = 6;
@@ -129,7 +133,8 @@
             // 
             // btnGastosViaticosPorCamion
             // 
-            this.btnGastosViaticosPorCamion.Location = new System.Drawing.Point(36, 316);
+            this.btnGastosViaticosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGastosViaticosPorCamion.Location = new System.Drawing.Point(32, 386);
             this.btnGastosViaticosPorCamion.Name = "btnGastosViaticosPorCamion";
             this.btnGastosViaticosPorCamion.Size = new System.Drawing.Size(121, 68);
             this.btnGastosViaticosPorCamion.TabIndex = 7;
@@ -158,7 +163,7 @@
             this.Controls.Add(this.btnKilometrosCamion);
             this.Controls.Add(this.cbxTipoGrafico);
             this.Controls.Add(this.lblTipoGrafico);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusStripConexion);
             this.Controls.Add(this.chartCamiones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
@@ -166,8 +171,8 @@
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusStripConexion.ResumeLayout(false);
+            this.statusStripConexion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,7 +181,7 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCamiones;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip statusStripConexion;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1Conexion;
         private System.Windows.Forms.Label lblTipoGrafico;
         private System.Windows.Forms.ComboBox cbxTipoGrafico;
