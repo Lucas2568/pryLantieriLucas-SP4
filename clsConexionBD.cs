@@ -32,7 +32,7 @@ namespace pryLantieriLucas_SP4
             }
             catch (Exception error)
             {
-                MessageBox.Show("Tiene un errorcito - " + error.Message);
+                MessageBox.Show("Falló la conexión - " + error.Message);
             }
 
         }
