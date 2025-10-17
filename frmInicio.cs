@@ -16,5 +16,11 @@ namespace pryLantieriLucas_SP4
         {
             InitializeComponent();
         }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBD.ConectarBD();
+        }
     }
 }
