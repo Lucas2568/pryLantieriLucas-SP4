@@ -42,8 +42,10 @@
             this.btnKilogramosPorCamion = new System.Windows.Forms.Button();
             this.btnGastosViaticosPorCamion = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.pbxSalir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).BeginInit();
             this.statusStripConexion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // chartCamiones
@@ -66,9 +68,9 @@
             // 
             this.statusStripConexion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1Conexion});
-            this.statusStripConexion.Location = new System.Drawing.Point(0, 512);
+            this.statusStripConexion.Location = new System.Drawing.Point(0, 554);
             this.statusStripConexion.Name = "statusStripConexion";
-            this.statusStripConexion.Size = new System.Drawing.Size(813, 22);
+            this.statusStripConexion.Size = new System.Drawing.Size(829, 22);
             this.statusStripConexion.TabIndex = 1;
             this.statusStripConexion.Text = "statusStrip1";
             // 
@@ -155,11 +157,23 @@
             this.lblTitulo.TabIndex = 8;
             this.lblTitulo.Text = "Estadísticas de Kilómetros recorridos por Camión";
             // 
+            // pbxSalir
+            // 
+            this.pbxSalir.Image = global::pryLantieriLucas_SP4.Properties.Resources.Salir;
+            this.pbxSalir.Location = new System.Drawing.Point(714, 494);
+            this.pbxSalir.Name = "pbxSalir";
+            this.pbxSalir.Size = new System.Drawing.Size(58, 57);
+            this.pbxSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSalir.TabIndex = 9;
+            this.pbxSalir.TabStop = false;
+            this.pbxSalir.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 534);
+            this.ClientSize = new System.Drawing.Size(829, 576);
+            this.Controls.Add(this.pbxSalir);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnGastosViaticosPorCamion);
             this.Controls.Add(this.btnKilogramosPorCamion);
@@ -177,6 +191,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).EndInit();
             this.statusStripConexion.ResumeLayout(false);
             this.statusStripConexion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +209,6 @@
         private System.Windows.Forms.Button btnKilogramosPorCamion;
         private System.Windows.Forms.Button btnGastosViaticosPorCamion;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox pbxSalir;
     }
 }
