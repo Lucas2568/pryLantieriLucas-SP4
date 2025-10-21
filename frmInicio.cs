@@ -21,7 +21,29 @@ namespace pryLantieriLucas_SP4
         {
             clsConexionBD clsConexionBD = new clsConexionBD();
             clsConexionBD.ConectarBD(toolStripStatusLabel1Conexion);
-            clsConexionBD.cargarChart(chartCamiones);
+            clsConexionBD.cargarChart(chartCamiones, "Kilómetros por camión", cbxTipoGrafico.Text);
+        }
+        private void btnKilometrosCamion_Click_1(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBD.cargarChart(chartCamiones, "Kilómetros por camión", cbxTipoGrafico.Text);
+        }
+        private void btnGastosPorCamion_Click_1(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBD.cargarChart(chartCamiones, "Gastos por camión", cbxTipoGrafico.Text);
+        }
+
+        private void btnKilogramosPorCamion_Click_1(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBD.cargarChart(chartCamiones, "Kilogramos por camión", cbxTipoGrafico.Text);
+        }
+
+        private void btnGastosViaticosPorCamion_Click_1(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBD.cargarChart(chartCamiones, "Gastos/Viáticos por camión", cbxTipoGrafico.Text);
         }
     }
 }
