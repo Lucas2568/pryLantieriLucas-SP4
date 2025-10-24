@@ -45,8 +45,7 @@ namespace pryLantieriLucas_SP4
             clsConexionBD clsConexionBD = new clsConexionBD();
             clsConexionBD.cargarChart(chartCamiones, "Gastos/Viáticos por camión", cbxTipoGrafico.Text);
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

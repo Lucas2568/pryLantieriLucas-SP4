@@ -42,21 +42,23 @@
             this.btnKilogramosPorCamion = new System.Windows.Forms.Button();
             this.btnGastosViaticosPorCamion = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.pbxSalir = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.ToolStripDropDownButton();
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).BeginInit();
             this.statusStripConexion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // chartCamiones
             // 
             chartArea1.Name = "ChartArea1";
             this.chartCamiones.ChartAreas.Add(chartArea1);
+            legend1.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
             legend1.Name = "Legend1";
             this.chartCamiones.Legends.Add(legend1);
             this.chartCamiones.Location = new System.Drawing.Point(222, 101);
             this.chartCamiones.Name = "chartCamiones";
             series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartCamiones.Series.Add(series1);
@@ -67,8 +69,9 @@
             // statusStripConexion
             // 
             this.statusStripConexion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1Conexion});
-            this.statusStripConexion.Location = new System.Drawing.Point(0, 554);
+            this.toolStripStatusLabel1Conexion,
+            this.btnSalir});
+            this.statusStripConexion.Location = new System.Drawing.Point(0, 469);
             this.statusStripConexion.Name = "statusStripConexion";
             this.statusStripConexion.Size = new System.Drawing.Size(829, 22);
             this.statusStripConexion.TabIndex = 1;
@@ -84,7 +87,7 @@
             // 
             this.lblTipoGrafico.AutoSize = true;
             this.lblTipoGrafico.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoGrafico.Location = new System.Drawing.Point(33, 13);
+            this.lblTipoGrafico.Location = new System.Drawing.Point(28, 101);
             this.lblTipoGrafico.Name = "lblTipoGrafico";
             this.lblTipoGrafico.Size = new System.Drawing.Size(120, 19);
             this.lblTipoGrafico.TabIndex = 2;
@@ -92,21 +95,24 @@
             // 
             // cbxTipoGrafico
             // 
+            this.cbxTipoGrafico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbxTipoGrafico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoGrafico.FormattingEnabled = true;
             this.cbxTipoGrafico.Items.AddRange(new object[] {
             "Gráfico de columna ",
             "Gráfico de línea",
             "Gráfico de barra",
             "Otra opción a su elección"});
-            this.cbxTipoGrafico.Location = new System.Drawing.Point(36, 43);
+            this.cbxTipoGrafico.Location = new System.Drawing.Point(31, 131);
             this.cbxTipoGrafico.Name = "cbxTipoGrafico";
             this.cbxTipoGrafico.Size = new System.Drawing.Size(153, 21);
             this.cbxTipoGrafico.TabIndex = 3;
             // 
             // btnKilometrosCamion
             // 
+            this.btnKilometrosCamion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKilometrosCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKilometrosCamion.Location = new System.Drawing.Point(32, 101);
+            this.btnKilometrosCamion.Location = new System.Drawing.Point(32, 188);
             this.btnKilometrosCamion.Name = "btnKilometrosCamion";
             this.btnKilometrosCamion.Size = new System.Drawing.Size(121, 46);
             this.btnKilometrosCamion.TabIndex = 4;
@@ -116,8 +122,9 @@
             // 
             // btnGastosPorCamion
             // 
+            this.btnGastosPorCamion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGastosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGastosPorCamion.Location = new System.Drawing.Point(32, 189);
+            this.btnGastosPorCamion.Location = new System.Drawing.Point(31, 240);
             this.btnGastosPorCamion.Name = "btnGastosPorCamion";
             this.btnGastosPorCamion.Size = new System.Drawing.Size(121, 46);
             this.btnGastosPorCamion.TabIndex = 5;
@@ -127,8 +134,9 @@
             // 
             // btnKilogramosPorCamion
             // 
+            this.btnKilogramosPorCamion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKilogramosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKilogramosPorCamion.Location = new System.Drawing.Point(32, 289);
+            this.btnKilogramosPorCamion.Location = new System.Drawing.Point(31, 292);
             this.btnKilogramosPorCamion.Name = "btnKilogramosPorCamion";
             this.btnKilogramosPorCamion.Size = new System.Drawing.Size(121, 51);
             this.btnKilogramosPorCamion.TabIndex = 6;
@@ -138,8 +146,9 @@
             // 
             // btnGastosViaticosPorCamion
             // 
+            this.btnGastosViaticosPorCamion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGastosViaticosPorCamion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGastosViaticosPorCamion.Location = new System.Drawing.Point(32, 386);
+            this.btnGastosViaticosPorCamion.Location = new System.Drawing.Point(31, 349);
             this.btnGastosViaticosPorCamion.Name = "btnGastosViaticosPorCamion";
             this.btnGastosViaticosPorCamion.Size = new System.Drawing.Size(121, 68);
             this.btnGastosViaticosPorCamion.TabIndex = 7;
@@ -151,29 +160,27 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(217, 64);
+            this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(459, 25);
             this.lblTitulo.TabIndex = 8;
             this.lblTitulo.Text = "Estadísticas de Kilómetros recorridos por Camión";
             // 
-            // pbxSalir
+            // btnSalir
             // 
-            this.pbxSalir.Image = global::pryLantieriLucas_SP4.Properties.Resources.Salir;
-            this.pbxSalir.Location = new System.Drawing.Point(714, 494);
-            this.pbxSalir.Name = "pbxSalir";
-            this.pbxSalir.Size = new System.Drawing.Size(58, 57);
-            this.pbxSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSalir.TabIndex = 9;
-            this.pbxSalir.TabStop = false;
-            this.pbxSalir.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSalir.Image = global::pryLantieriLucas_SP4.Properties.Resources.Salir;
+            this.btnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(29, 20);
+            this.btnSalir.Text = "toolStripDropDownButton1";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 576);
-            this.Controls.Add(this.pbxSalir);
+            this.ClientSize = new System.Drawing.Size(829, 491);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnGastosViaticosPorCamion);
             this.Controls.Add(this.btnKilogramosPorCamion);
@@ -191,7 +198,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartCamiones)).EndInit();
             this.statusStripConexion.ResumeLayout(false);
             this.statusStripConexion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,6 +215,6 @@
         private System.Windows.Forms.Button btnKilogramosPorCamion;
         private System.Windows.Forms.Button btnGastosViaticosPorCamion;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.PictureBox pbxSalir;
+        private System.Windows.Forms.ToolStripDropDownButton btnSalir;
     }
 }

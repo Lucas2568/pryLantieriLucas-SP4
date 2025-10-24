@@ -13,7 +13,7 @@ namespace pryLantieriLucas_SP4
 {
     internal class clsConexionBD
     {
-        string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\Trabajos Lucas\\IES\\Segundo Año\\Primer Semestre\\Lab3\\SP4\\BaseDeDatos\\control_transporte.accdb";
+        string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\BaseDeDatos\\control_transporte.accdb";
         OleDbConnection coneccionBaseDatos;
         OleDbCommand comandoBaseDatos;
         OleDbDataReader lectorDataReader;
